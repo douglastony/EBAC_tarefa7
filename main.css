@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+header ul{
+    font-family: "Playwrite HR Lijeva", cursive
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white
+}
+
+header > .container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+
+header ul li{
+    padding-right: 16px;
+    font-size: 1.4em;
+}
+
+section{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobre-nos{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    width: 100%;
+    margin:0 auto;
+    padding: 32px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-nos img{
+    max-width: 400px;
+}
+
+h2{
+    padding-bottom: 8px;
+    border-bottom: 4px solid black;
+}
+
+.sobre-nos p{
+    padding-top: 16px;
+}
+
+.produtos img{
+    width: 100%;
+}
+
+.produtos ul{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    width: 100%;
+    margin:0 auto;
+    padding: 32px 0;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+.produtos a{
+    text-decoration: none;
+    color: black;
+    width:100%;
+}
+
+.produtos button{
+    background-color: black;
+    border-radius: 6px;
+    border: 2px solic white;
+    color: white;
+    width:100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width:1023px){
+    .sobre-nos{
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .sobre-nos .container{
+        margin: auto;
+        align-items: center;
+    }
+
+    .sobre-nos img{
+        max-width: 600px;
+    }
+
+    .produtos ul{
+        max-width: 90%;
+        grid-template-columns: repeat(2, 49%);
+        padding-bottom: 60px;
+    }
+
+    .produtos ul li{
+        padding-bottom: 16px;
+    }
+
+    .sobre-nos div.h2{
+        margin: 0 auto;
+    }
+
+    section > h2{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:640px){
+    header .container{
+        display:block;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .sobre-nos{
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .sobre-nos img{
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    section > h2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .produtos{
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .produtos ul{
+        display:block;
+        margin:0 auto;
+        align-items: center;
+    }
+
+    .produtos ul li{
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 16px ;
+    }
+}
